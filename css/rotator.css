@@ -53,6 +53,17 @@
 }
 
 /* === Nanobar === */
+@-webkit-keyframes fill {
+    0% {
+        width: 0;
+    }
+    96% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
 @keyframes fill {
     0% {
         width: 0;
@@ -84,6 +95,10 @@
     z-index: 101;
 }
 .nanobar.sliding:after {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: fill;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
     animation-duration: 3s;
     animation-name: fill;
     animation-timing-function: linear;
