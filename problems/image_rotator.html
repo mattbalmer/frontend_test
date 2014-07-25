@@ -3,6 +3,9 @@
 <head>
 	<title>Frontend Coding Test</title>
 	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+    <link type="text/css" rel="stylesheet" href="../css/rotator.css" />
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/rotator.js"></script>
 	<style type="text/css">
 		#rotator {
 			width: 450px;
@@ -32,27 +35,48 @@
 
 	<hr />
 
-	<h4>Katarina</h4>
-	<p>Fruitcake bonbon donut jelly-o brownie biscuit marzipan pie.</p>
-	<img src="../img/kat_1.jpg" /><br/>
-
-	<h4>Red Card Katarina</h4>
-	<p>Cheesecake marzipan cupcake biscuit candy canes pudding.</p>
-	<img src="../img/kat_2.jpg" /><br/>
-
-	<h4>Kitty Cat Katarina</h4>
-	<p>Applicake topping halvah lemon drops wypas cotton candy.</p>
-	<img src="../img/kat_3.jpg" /><br/>
-
-	<h4>High Command Katarina</h4>
-	<p>Oat cake macaroon souffle cupcake chupa chups chocolate bar bear claw dragee lemon drops.</p>
-	<img src="../img/kat_4.jpg" /><br/>
-
-	<hr/>
-
 	<div id="rotator">
-		Rotator Here
-	</div>
+        <div class="nanobar"></div>
+
+        <!-- This container will scale with the # of children -->
+        <section class="rotator-inner-container">
+
+            <!-- Each frame has its own div, so that we can slide them -->
+            <div class="frame">
+
+                <!-- reordered the markup to put the image behind the text -->
+                <img src="../img/kat_1.jpg" />
+                <div class="details">
+                    <h4>Katarina</h4>
+                    <p>Fruitcake bonbon donut jelly-o brownie biscuit marzipan pie.</p>
+                </div>
+            </div>
+
+            <div class="frame">
+                <img src="../img/kat_2.jpg" />
+                <div class="details">
+                    <h4>Red Card Katarina</h4>
+                    <p>Cheesecake marzipan cupcake biscuit candy canes pudding.</p>
+                </div>
+            </div>
+
+            <div class="frame">
+                <img src="../img/kat_3.jpg" />
+                <div class="details">
+                    <h4>Kitty Cat Katarina</h4>
+                    <p>Applicake topping halvah lemon drops wypas cotton candy.</p>
+                </div>
+            </div>
+
+            <div class="frame">
+                <img src="../img/kat_4.jpg" />
+                <div class="details">
+                    <h4>High Command Katarina</h4>
+                    <p>Oat cake macaroon souffle cupcake chupa chups chocolate bar bear claw dragee lemon drops.</p>
+                </div>
+            </div>
+        </section>
+    </div>
 </div>
 
 </body>

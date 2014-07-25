@@ -1,0 +1,91 @@
+#rotator {
+    overflow: hidden;
+    height: 266px !important;
+    position: relative;
+}
+
+#rotator .rotator-inner-container {
+    font-size: 0;
+    width: 1800px;
+}
+
+#rotator .frame {
+    position: relative;
+    display: inline-block;
+    width: 450px;
+    height: 266px;
+    font-size: 18px;
+    transition: margin-left 1s ease-in-out;
+}
+
+#rotator .frame .details {
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    margin: 0;
+    background: rgba(0,0,0,.5);
+    padding: 1em;
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow: inset 0 5px 10px rgba(0,0,0,.33);
+}
+
+#rotator .frame h4 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    color: #DC291E;
+    text-shadow: 1px 1px 1px #000;
+}
+#rotator .frame p {
+    font-size: 14px;
+    margin: .75em 0 0;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.67);
+}
+
+#rotator .frame img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* === Nanobar === */
+@keyframes fill {
+    0% {
+        width: 0;
+    }
+    96% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+.nanobar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(255,255,255,.67);
+    z-index: 100;
+}
+.nanobar:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #DC291E;
+    z-index: 101;
+}
+.nanobar.sliding:after {
+    animation-duration: 3s;
+    animation-name: fill;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

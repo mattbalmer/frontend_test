@@ -3,6 +3,9 @@
 <head>
 	<title>Frontend Coding Test</title>
 	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+	<link type="text/css" rel="stylesheet" href="../css/tabs.css" />
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/tabs.js"></script>
 	<style type="text/css">
 		.picture {
 			background-color: #F9F9F9;
@@ -39,23 +42,28 @@
 
 		<hr/>
 
-		<div id="container">
-			Turn this content into a tabbed container.
+		<div id="container" class="tabs">
 
-			<h3>Tab 1</h3>
-			<p>
-				Gingerbread muffin gummies gingerbread macaroon. Lollipop candy applicake toffee faworki. Bear claw topping jelly toffee toffee powder tiramisu candy chupa chups. Chupa chups dragee icing applicake chupa chups dessert. Croissant jelly faworki marzipan tootsie roll marshmallow. Marshmallow toffee sweet roll fruitcake.
-			</p>
+            <!-- Headers for all of the tabs -->
+            <!-- data-tab is used to link tab's headers to their content-->
+			<h3 class="tab" data-tab="1">Tab 1</h3>
+			<h3 class="tab" data-tab="2">Tab 2</h3>
+			<h3 class="tab" data-tab="3">Tab 3</h3>
 
-			<h3>Tab 2</h3>
-			<p>
-				Chocolate faworki croissant brownie halvah macaroon gummi bears wypas. Chupa chups icing gummies pudding dessert carrot cake. Cupcake jelly beans sweet roll icing ice cream apple pie tootsie roll gummi bears marzipan. Brownie gummies chupa chups pie. Cupcake jujubes topping. 
-			</p>
+            <!-- Container for all of the tab-related markup -->
+            <section class="tab-content-container">
 
-			<h3>Tab 3</h3>
-			<p>
-				Cheesecake jelly beans ice cream lollipop sweet pastry. Chupa chups dessert cheesecake sesame snaps. Cookie ice cream candy canes pastry cake muffin. Icing chocolate sweet gummi bears powder oat cake oat cake lemon drops.
-			</p>
+                <!-- data-tab is used to link tab's headers to their content-->
+                <p class="tab-content" data-tab="1">
+                    Gingerbread muffin gummies gingerbread macaroon. Lollipop candy applicake toffee faworki. Bear claw topping jelly toffee toffee powder tiramisu candy chupa chups. Chupa chups dragee icing applicake chupa chups dessert. Croissant jelly faworki marzipan tootsie roll marshmallow. Marshmallow toffee sweet roll fruitcake.
+                </p>
+                <p class="tab-content" data-tab="2">
+                    Chocolate faworki croissant brownie halvah macaroon gummi bears wypas. Chupa chups icing gummies pudding dessert carrot cake. Cupcake jelly beans sweet roll icing ice cream apple pie tootsie roll gummi bears marzipan. Brownie gummies chupa chups pie. Cupcake jujubes topping.
+                </p>
+                <p class="tab-content" data-tab="3">
+                    Cheesecake jelly beans ice cream lollipop sweet pastry. Chupa chups dessert cheesecake sesame snaps. Cookie ice cream candy canes pastry cake muffin. Icing chocolate sweet gummi bears powder oat cake oat cake lemon drops.
+                </p>
+            </section>
 		</div>
 	</div>
 </body>

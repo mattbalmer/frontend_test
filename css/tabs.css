@@ -1,0 +1,47 @@
+.tabs {
+    font-size: 0;
+    margin-top: 20px;
+}
+
+/* === Tab Headings === */
+.tabs .tab {
+    font-size: 18px;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-right-width: 0;
+    padding: .5em 1em;
+    cursor: pointer;
+    margin: 0;
+    background: #bbb;
+    color: #777;
+
+    transition: background .3s linear, color .3s linear;
+}
+.tabs .tab:first-of-type {
+    border-top-left-radius: 5px;
+}
+.tabs .tab:last-of-type {
+    border-top-right-radius: 5px;
+    border-right-width: 1px;
+}
+.tabs .tab.active {
+    background: #f2f2f2;
+    color: #222;
+}
+
+/* === Tab Content === */
+.tabs .tab-content-container {
+    font-size: 16px;
+    padding: 1em;
+    line-height: 1.8;
+    background: #f2f2f2;
+    color: #222;
+    border-radius: 0 5px 5px 5px;
+}
+.tabs .tab-content {
+    margin: 0;
+    display: none;
+}
+.tabs .tab-content.active {
+    display: block;
+}
